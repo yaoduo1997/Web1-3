@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>用户登录、注册页面</title>
+	<meta charset="utf-8"/>
+	</head>
+	<body  text="#000000">
+		<form action="action_http://10.7.1.98/taozhuo/form_data.p" method="GET" target="_blank" accept-charset="UTF-8" ectype="application/x-www-form-urlencoded" autocomplete="off" novalidate>
+		<table border="1" cellspacing="0" align="center" bordercolor="#C0C0C0">
+			<tr>
+				<td width="100" height="30">用户名：</td>
+				<td width="350" ><input type="text" name="myName" /></td>
+			</tr>
+			<tr height="30">
+				<td>密码：</td>
+				<td><input type="password" name="mima" /></td>
+			</tr>
+			<tr height="30">
+				<td>确认密码：</td>
+				<td><input type="password" name="mima"/></td>
+			</tr>
+			<tr height="30">
+				<td>性别:</td>
+				<td><input type="radio" value="Male" name="sex" checked="checked" />男
+					<input type="radio" value="Female" name="sex"/>女
+				</td>
+			</tr>
+			<tr height="30">
+				<td>生日：</td>
+				<td>
+					<select name="rili">
+					<option value="gongli">公历</option>
+					<option value="yinli">阴历</option>
+					</select>
+					<select name="nian">
+					<option value="1">年</option>
+					<option value="2">1994</option>
+					<option value="3">1995</option>
+					<option value="4">1996</option>
+					<option value="5">1997</option>
+					<option value="6">1998</option>
+					<option value="7">1999</option>
+					<option value="8">2000</option>
+					</select>
+					<select name="yue">
+					<option value="1">月</option>
+					<option value="2">1</option>
+					<option value="3">2</option>
+					<option value="4">3</option>
+					<option value="5">4</option>
+					<option value="6">5</option>
+					<option value="7">6</option>
+					<option value="8">7</option>
+					<option value="9">8</option>
+					<option value="10">9</option>
+					<option value="11">10</option>
+					<option value="12">11</option>
+					<option value="13">12</option>
+					</select>
+					<select name="ri">
+					<option value="1">日</option>
+					<option value="2">1</option>
+					<option value="3">2</option>
+					<option value="4">3</option>
+					<option value="5">4</option>
+					<option value="6">5</option>
+					<option value="7">6</option>
+					<option value="8">7</option>
+					<option value="9">8</option>
+					<option value="10">9</option>
+					<option value="11">10</option>
+					<option value="12">11</option>
+					<option value="13">12</option>
+					<option value="14">13</option>
+					<option value="15">14</option>
+					<option value="16">15</option>
+					<option value="17">16</option>
+					<option value="18">17</option>
+					<option value="19">18</option>
+					<option value="20">19</option>
+					<option value="21">20</option>
+					<option value="22">21</option>
+					<option value="23">22</option>
+					<option value="24">23</option>
+					<option value="25">24</option>
+					<option value="26">25</option>
+					<option value="27">26</option>
+					<option value="28">27</option>
+					<option value="29">28</option>
+					<option value="30">29</option>
+					<option value="31">30</option>
+					<option value="32">31</option>
+					</select>
+				</td>
+			</tr>
+			<tr height="30">
+				<td>所在地：</td>
+				<td>
+					<select name="nation">
+						<option value="1">中国</option>
+						<option value="2">俄罗斯</option>
+						<option value="3">美国</option>
+						<option value="4">英国</option>
+						<option value="5">法国</option>
+						<option value="6">韩国</option>
+						<option value="7">印度</option>
+						<option value="8">马来西亚</option>
+					</select>
+					<select name="province">
+						<option value="1">河北</option>
+						<option value="2">河南</option>
+						<option value="3">山东</option>
+						<option value="4">江苏</option>
+						<option value="5">天津</option>
+						<option value="6">上海</option>
+						<option value="7">深圳</option>
+						<option value="8">广东</option>
+						<option value="9">山西</option>
+						<option value="10">北京</option>
+					</select>
+					<select name="city">
+						<option value="1">石家庄</option>
+						<option value="2">北京</option>
+						<option value="3">天津</option>
+						<option value="4">上海</option>
+						<option value="5">衡水</option>
+						<option value="6">唐山</option>
+						<option value="7">秦皇岛</option>
+						<option value="8">保定</option>
+						<option value="9">邢台</option>
+						<option value="10">邯郸</option>
+						<option value="11">沧州</option>
+						<option value="12">合肥</option>
+					</select>
+				</td>
+			</tr>
+			<tr height="30">
+				<td>验证码：</td>
+				<td>
+					<input type="text" id="imgCode" onfocus="hideErrorInfo('form-ipt-error-r-imgcode');" onblur="validateImgCode();"/>
+					<img  src="yanzhengma.jpg"/ width="100" height="25">
+				</td>
+			</tr>
+			<tr height="30">
+				<td>证件类型：</td>
+				<td>
+					<select name="zhengjian">
+						<option value="1">身份证</option>
+						<option value="2">学生证</option>
+						<option value="3">士官证</option>
+						<option value="4">港澳通行证</option>
+						<option value="5">外国人永久居留证</option>
+						<option value="6">护照</option>
+					</select>
+				</td>
+			</tr>
+			<tr height="30">
+				<td>证件号：</td>
+				<td><input type="text"/></td>
+			</tr>
+			<tr height="30">
+				<td>爱好：</td>
+				<td>
+					<input type="checkbox" name="hobby" value="1">音乐
+					<input type="checkbox" name="hobby" value="2" checked="checked">读书
+					<input type="checkbox" name="hobby" value="3" checked="checked">跳舞
+					<input type="checkbox" name="hobby" value="4">下棋
+					<input type="checkbox" name="hobby" value="5">其他
+				</td>
+			</tr>
+			<tr>
+				<td>说明：</td>
+				<td>
+					<textarea name="cat" rows="10" cols="50"></textarea>
+				</td>
+			</tr>
+			<tr height="30">
+				<td>上传头像</td>
+				<td><input type="file"/></td>
+			</tr>
+			<tr height="30">
+				<td colspan="2" align="center">
+					<input type="submit" value="提交" name="sub" />
+					<input type="reset" value="重置" name="res" />
+					<input type="button" value="按钮" name="but" onclick="alert('Hello World')" />
+				</td>
+			</tr>
+		</table>
+		</form>
+		<br/>
+		<form action="action_http://10.7.1.98/taozhuo/form_data.p" method="GET" target="_blank" accept-charset="UTF-8" ectype="application/x-www-form-urlencoded" autocomplete="off" novalidate>
+		<table border="1" cellspacing="0" align="center" bordercolor="#000000">
+			<tr>
+				<td colspan="2" align="center">用户登录</td>
+			</tr>
+			<tr>
+				<td width="80">用户名：</td>
+				<td width="240"><input type="text" name="name" /></td>
+			</tr>
+			<tr>
+				<td>密码：</td>
+				<td><input type="text" name="mi" /></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<input type="submit" value="登录"  name="get" />
+					<input type="submit" value="注册" name="write" />
+				</td>
+			</tr>
+		</table>
+		</form>
+	</body>
+</html>
