@@ -1,0 +1,29 @@
+body {
+	color: gray;
+	font-size: 12px;
+}
+p {
+	text-height: 1.5em;
+}
+a:link {
+	text-decoration: none;
+	color: gray;
+}
+a:hover {
+	text-decoration: underline;
+}
+.no1 {
+	font-size: 14px;
+	color: #b9f605;
+	font-weight: bold;
+}
+.no2 {
+	color: #FFFFFF;
+}
+a:hover {
+	color: #b9f605;
+	text-decoration: none;
+}
+.no3 {
+	color: #fdb306;
+}
