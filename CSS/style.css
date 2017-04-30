@@ -1,13 +1,13 @@
 body {
 	color: gray;
 	font-size: 12px;
+	line-height: 2em;
 }
-p {
-	text-height: 1.5em;
+a{
+	color: #727272;
 }
 a:link {
 	text-decoration: none;
-	color: gray;
 }
 a:hover {
 	text-decoration: underline;
@@ -17,13 +17,18 @@ a:hover {
 	color: #b9f605;
 	font-weight: bold;
 }
-.no2 {
+a.no2 {
+	font-size: 14px;
 	color: #FFFFFF;
 }
-a:hover {
+a.no2:hover {
 	color: #b9f605;
 	text-decoration: none;
 }
-.no3 {
+.no3{
 	color: #fdb306;
+	font-size: 14px;
+}
+.no3:hover{
+	text-decoration: none;
 }
